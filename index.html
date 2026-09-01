@@ -361,6 +361,65 @@
 
 <script>
 
+const SUPABASE_URL = "https://PROJECT-REF.supabase.co";
+const SUPABASE_ANON_KEY = "PASTE_PUBLISHABLE_KEY_DI_SINI";
+
+async function createOrder() {
+
+    const userId = document.getElementById("userId").value.trim();
+    const zoneId = document.getElementById("zoneId").value.trim();
+
+    if (!userId) {
+        alert("Masukkan User ID terlebih dahulu.");
+        return;
+    }
+
+    const response = await fetch(
+        SUPABASE_URL + "/functions/v1/create-order",
+        {
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json",
+                "apikey": SUPABASE_ANON_KEY,
+                "Authorization": "Bearer " + SUPABASE_ANON_KEY
+            },
+
+            body: JSON.stringify({
+                user_id: userId,
+                zone_id: zoneId,
+                amount: 1000
+            })
+        }
+    );
+
+    const result = await response.json();
+
+    console.log(result);
+
+    if (!response.ok) {
+        alert("Gagal membuat pesanan.");
+        return;
+    }
+
+    if (result.success) {
+
+        alert(
+            "Pesanan berhasil dibuat!\n\n" +
+            "Order ID: " + result.order_id
+        );
+
+        console.log("ORDER:", result.order_id);
+
+    } else {
+
+        alert(
+            result.message || "Pesanan gagal dibuat."
+        );
+    }
+}
+
+
 function checkTransaction(event) {
 
     event.preventDefault();
@@ -374,7 +433,7 @@ function checkTransaction(event) {
     }
 
     alert(
-        "Fitur cek transaksi akan kita hubungkan ke database pada tahap berikutnya."
+        "Pengecekan transaksi akan kita aktifkan setelah sistem pembayaran selesai."
     );
 }
 
