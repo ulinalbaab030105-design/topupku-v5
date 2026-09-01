@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TopUpKu - Top Up Game & Digital</title>
+
+    <meta name="description"
+          content="TopUpKu - Top up game, e-wallet, pulsa dan kuota dengan cepat dan mudah.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #171717;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header {
+            background: white;
+            padding: 18px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .logo span {
+            color: #5b4df6;
+        }
+
+        .login-btn {
+            padding: 10px 16px;
+            border-radius: 10px;
+            background: #5b4df6;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #5b4df6, #7b68ee);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 28px 18px;
+        }
+
+        .section-title {
+            font-size: 21px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .category {
+            background: white;
+            padding: 24px 15px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+        }
+
+        .icon {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .category h3 {
+            font-size: 17px;
+            margin-bottom: 6px;
+        }
+
+        .category p {
+            font-size: 12px;
+            color: #777;
+            line-height: 1.4;
+        }
+
+        .check-box {
+            margin-top: 28px;
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+        }
+
+        .check-box h2 {
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .check-form {
+            display: flex;
+            gap: 10px;
+        }
+
+        .check-form input {
+            flex: 1;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .check-form button {
+            border: none;
+            background: #5b4df6;
+            color: white;
+            padding: 13px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .features {
+            margin-top: 28px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .feature {
+            background: white;
+            padding: 18px 10px;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .feature small {
+            color: #777;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 25px 20px;
+            background: #171717;
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #bbb;
+            margin-top: 7px;
+        }
+
+        @media (max-width: 600px) {
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .check-form {
+                flex-direction: column;
+            }
+
+            .check-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        TopUp<span>Ku</span>
+    </div>
+
+    <a href="#" class="login-btn">
+        Login
+    </a>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Top Up Jadi Lebih Mudah</h1>
+
+    <p>
+        Game, e-wallet, pulsa dan kuota
+        dalam satu tempat.
+    </p>
+
+</section>
+
+
+<main class="container">
+
+    <h2 class="section-title">
+        Mau Top Up Apa?
+    </h2>
+
+
+    <div class="categories">
+
+        <a href="#" class="category">
+
+            <div class="icon">🎮</div>
+
+            <h3>Game</h3>
+
+            <p>
+                Mobile Legends, Free Fire
+                dan game lainnya
+            </p>
+
+        </a>
+
+
+        <a href="#" class="category">
+
+            <div class="icon">💳</div>
+
+            <h3>E-Wallet</h3>
+
+            <p>
+                DANA, GoPay, OVO
+                dan lainnya
+            </p>
+
+        </a>
+
+
+        <a href="#" class="category">
+
+            <div class="icon">📱</div>
+
+            <h3>Pulsa</h3>
+
+            <p>
+                Isi pulsa berbagai operator
+            </p>
+
+        </a>
+
+
+        <a href="#" class="category">
+
+            <div class="icon">🌐</div>
+
+            <h3>Kuota</h3>
+
+            <p>
+                Paket internet berbagai operator
+            </p>
+
+        </a>
+
+    </div>
+
+
+    <div class="check-box">
+
+        <h2>🔎 Cek Transaksi</h2>
+
+        <form class="check-form"
+              onsubmit="checkTransaction(event)">
+
+            <input
+                type="text"
+                id="transactionId"
+                placeholder="Masukkan ID transaksi"
+                required
+            >
+
+            <button type="submit">
+                Cek
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="features">
+
+        <div class="feature">
+            <strong>⚡ Cepat</strong>
+            <small>Proses transaksi cepat</small>
+        </div>
+
+        <div class="feature">
+            <strong>🔒 Aman</strong>
+            <small>Transaksi lebih aman</small>
+        </div>
+
+        <div class="feature">
+            <strong>💰 Terjangkau</strong>
+            <small>Pilihan produk beragam</small>
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <strong>TopUpKu</strong>
+
+    <p>
+        Top up kebutuhan digital kamu
+        dalam satu tempat.
+    </p>
+
+    <p>
+        © 2026 TopUpKu
+    </p>
+
+</footer>
+
+
+<script>
+
+function checkTransaction(event) {
+
+    event.preventDefault();
+
+    const id =
+        document.getElementById("transactionId").value.trim();
+
+    if (!id) {
+        alert("Masukkan ID transaksi.");
+        return;
+    }
+
+    alert(
+        "Fitur cek transaksi akan kita hubungkan ke database pada tahap berikutnya."
+    );
+}
+
+</script>
+
+</body>
+</html>
